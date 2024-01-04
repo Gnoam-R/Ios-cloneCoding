@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="6" y="-2"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="3SI-Qv-xvW">
             <objects>
                 <viewController id="C9m-Rx-3p3" sceneMemberID="viewController">
@@ -64,23 +64,38 @@
                         <viewLayoutGuide key="safeArea" id="eKE-80-ZGr"/>
                         <color key="backgroundColor" name="bg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="68O-Ib-uNr"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabIcon_live" selectedImage="tabIcon_live_selected" id="68O-Ib-uNr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kP-on-c7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2155" y="308"/>
         </scene>
-        <!--Item 1-->
+        <!--Home View Controller-->
         <scene sceneID="Vhw-Ai-2L8">
             <objects>
-                <viewController id="bNe-7K-b2B" sceneMemberID="viewController">
+                <viewController id="bNe-7K-b2B" customClass="HomeViewController" customModule="KTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="psj-DF-p89">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sMu-Hx-WBZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" name="bg"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ch5-RU-4yX"/>
                         <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="sMu-Hx-WBZ" firstAttribute="leading" secondItem="ch5-RU-4yX" secondAttribute="leading" id="EFS-tj-pcH"/>
+                            <constraint firstItem="ch5-RU-4yX" firstAttribute="bottom" secondItem="sMu-Hx-WBZ" secondAttribute="bottom" id="WJr-OB-pmu"/>
+                            <constraint firstItem="sMu-Hx-WBZ" firstAttribute="top" secondItem="ch5-RU-4yX" secondAttribute="top" id="jkD-mv-bxR"/>
+                            <constraint firstItem="ch5-RU-4yX" firstAttribute="trailing" secondItem="sMu-Hx-WBZ" secondAttribute="trailing" id="kHt-vM-Gn3"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="DwS-Hj-SCr"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabIcon_home" selectedImage="tabIcon_home_selected" id="DwS-Hj-SCr"/>
+                    <connections>
+                        <outlet property="tableView" destination="sMu-Hx-WBZ" id="e30-d1-K6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crs-oh-n5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,11 +104,19 @@
         <!--Tab Bar Controller-->
         <scene sceneID="13f-74-Iok">
             <objects>
-                <tabBarController id="BeL-ly-gdb" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" id="BeL-ly-gdb" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uE9-eM-56g">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="bg"/>
+                            <color key="shadowColor" name="stroke-light"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="bg"/>
+                            <color key="shadowColor" name="stroke-light"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="bNe-7K-b2B" kind="relationship" relationship="viewControllers" id="ear-1r-HqW"/>
@@ -105,7 +128,7 @@
             </objects>
             <point key="canvasLocation" x="1249" y="5"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="N1O-PQ-o1b">
             <objects>
                 <viewController id="an9-rg-ZvE" sceneMemberID="viewController">
@@ -115,7 +138,7 @@
                         <viewLayoutGuide key="safeArea" id="Guh-DK-2Ti"/>
                         <color key="backgroundColor" name="bg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tIM-ic-5B2"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabIcon_my" selectedImage="tabIcon_my_selected" id="tIM-ic-5B2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxJ-Wd-oR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,11 +147,20 @@
     </scenes>
     <resources>
         <image name="launchImage" width="100" height="100"/>
+        <image name="tabIcon_home" width="28" height="28"/>
+        <image name="tabIcon_home_selected" width="28" height="28"/>
+        <image name="tabIcon_live" width="80" height="28"/>
+        <image name="tabIcon_live_selected" width="80" height="28"/>
+        <image name="tabIcon_my" width="28" height="28"/>
+        <image name="tabIcon_my_selected" width="29" height="28"/>
         <namedColor name="bg">
             <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="main-brown">
             <color red="0.27843137254901962" green="0.12941176470588237" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="stroke-light">
+            <color red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

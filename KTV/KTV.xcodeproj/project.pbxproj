@@ -10,13 +10,17 @@
 		68CA313C2AAA292900A744AF /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA313B2AAA292900A744AF /* Color.xcassets */; };
 		95E70C962AA8B93B007BAD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C952AA8B93B007BAD7B /* AppDelegate.swift */; };
 		95E70C982AA8B93B007BAD7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */; };
-		95E70C9A2AA8B93B007BAD7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C992AA8B93B007BAD7B /* ViewController.swift */; };
+		95E70C9A2AA8B93B007BAD7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C992AA8B93B007BAD7B /* LoginViewController.swift */; };
 		95E70C9D2AA8B93B007BAD7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E70C9B2AA8B93B007BAD7B /* Main.storyboard */; };
 		95E70C9F2AA8B93D007BAD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E70C9E2AA8B93D007BAD7B /* Assets.xcassets */; };
 		95E70CA22AA8B93D007BAD7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E70CA02AA8B93D007BAD7B /* LaunchScreen.storyboard */; };
 		95E70CAD2AA8B93D007BAD7B /* KTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70CAC2AA8B93D007BAD7B /* KTVTests.swift */; };
 		95E70CB72AA8B93D007BAD7B /* KTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70CB62AA8B93D007BAD7B /* KTVUITests.swift */; };
 		95E70CB92AA8B93D007BAD7B /* KTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70CB82AA8B93D007BAD7B /* KTVUITestsLaunchTests.swift */; };
+		CCADE3432B4411AD00E4EE30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADE3422B4411AD00E4EE30 /* HomeViewController.swift */; };
+		CCADE3472B4413F600E4EE30 /* HomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADE3452B4413F600E4EE30 /* HomeVideoCell.swift */; };
+		CCADE3482B4413F600E4EE30 /* HomeVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCADE3462B4413F600E4EE30 /* HomeVideoCell.xib */; };
+		CCADE34A2B4427EB00E4EE30 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADE3492B4427EB00E4EE30 /* HomeSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,7 @@
 		95E70C922AA8B93B007BAD7B /* KTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E70C952AA8B93B007BAD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95E70C992AA8B93B007BAD7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95E70C992AA8B93B007BAD7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95E70C9C2AA8B93B007BAD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95E70C9E2AA8B93D007BAD7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95E70CA12AA8B93D007BAD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,10 @@
 		95E70CB22AA8B93D007BAD7B /* KTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E70CB62AA8B93D007BAD7B /* KTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTVUITests.swift; sourceTree = "<group>"; };
 		95E70CB82AA8B93D007BAD7B /* KTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCADE3422B4411AD00E4EE30 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CCADE3452B4413F600E4EE30 /* HomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVideoCell.swift; sourceTree = "<group>"; };
+		CCADE3462B4413F600E4EE30 /* HomeVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVideoCell.xib; sourceTree = "<group>"; };
+		CCADE3492B4427EB00E4EE30 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,10 @@
 		95E70C942AA8B93B007BAD7B /* KTV */ = {
 			isa = PBXGroup;
 			children = (
+				CCADE3412B44119300E4EE30 /* Home */,
+				CCADE3402B440EE000E4EE30 /* Login */,
 				95E70C952AA8B93B007BAD7B /* AppDelegate.swift */,
 				95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */,
-				95E70C992AA8B93B007BAD7B /* ViewController.swift */,
 				95E70C9B2AA8B93B007BAD7B /* Main.storyboard */,
 				95E70C9E2AA8B93D007BAD7B /* Assets.xcassets */,
 				68CA313B2AAA292900A744AF /* Color.xcassets */,
@@ -128,6 +137,33 @@
 				95E70CB82AA8B93D007BAD7B /* KTVUITestsLaunchTests.swift */,
 			);
 			path = KTVUITests;
+			sourceTree = "<group>";
+		};
+		CCADE3402B440EE000E4EE30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95E70C992AA8B93B007BAD7B /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CCADE3412B44119300E4EE30 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CCADE3442B44138800E4EE30 /* Cell */,
+				CCADE3422B4411AD00E4EE30 /* HomeViewController.swift */,
+				CCADE3492B4427EB00E4EE30 /* HomeSection.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CCADE3442B44138800E4EE30 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCADE3452B4413F600E4EE30 /* HomeVideoCell.swift */,
+				CCADE3462B4413F600E4EE30 /* HomeVideoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +273,7 @@
 				95E70CA22AA8B93D007BAD7B /* LaunchScreen.storyboard in Resources */,
 				68CA313C2AAA292900A744AF /* Color.xcassets in Resources */,
 				95E70C9F2AA8B93D007BAD7B /* Assets.xcassets in Resources */,
+				CCADE3482B4413F600E4EE30 /* HomeVideoCell.xib in Resources */,
 				95E70C9D2AA8B93B007BAD7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95E70C9A2AA8B93B007BAD7B /* ViewController.swift in Sources */,
+				95E70C9A2AA8B93B007BAD7B /* LoginViewController.swift in Sources */,
 				95E70C962AA8B93B007BAD7B /* AppDelegate.swift in Sources */,
+				CCADE34A2B4427EB00E4EE30 /* HomeSection.swift in Sources */,
 				95E70C982AA8B93B007BAD7B /* SceneDelegate.swift in Sources */,
+				CCADE3472B4413F600E4EE30 /* HomeVideoCell.swift in Sources */,
+				CCADE3432B4411AD00E4EE30 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
